@@ -67,10 +67,47 @@ The model is compiled using the **Adam optimizer** with a learning rate of 0.001
 
 **Results:**
 
-![image](https://github.com/user-attachments/assets/3d6da8b7-8885-4fa7-96de-dfbcdc87cbeb) 
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/3d6da8b7-8885-4fa7-96de-dfbcdc87cbeb" alt="Image 1" style="width: 48%; margin-right: 10px;">
+  <img src="https://github.com/user-attachments/assets/508db8ff-308d-465c-baf1-6eb7779cc09d" alt="Image 2" style="width: 48%;">
+</div>
 
-Fig - Plots for TFIDF  
+$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$ *Fig - Plots for TFIDF*  $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$ *Fig - Plots for BERT*
 
-![image](https://github.com/user-attachments/assets/508db8ff-308d-465c-baf1-6eb7779cc09d)
+<div align="center">
+  <table>
+    <tr>
+      <th>Model</th>
+      <th>Dataset</th>
+      <th>Loss</th>
+      <th>F1 Score</th>
+    </tr>
+    <tr>
+      <td>BERT</td>
+      <td>Train</td>
+      <td>0.2900</td>
+      <td>0.9311</td>
+    </tr>
+    <tr>
+      <td>BERT</td>
+      <td>Test</td>
+      <td>0.2932</td>
+      <td>0.9319</td>
+    </tr>
+    <tr>
+      <td>TF-IDF</td>
+      <td>Train</td>
+      <td>0.1779</td>
+      <td>0.9610</td>
+    </tr>
+    <tr>
+      <td>TF-IDF</td>
+      <td>Test</td>
+      <td>0.2371</td>
+      <td>0.9465</td>
+    </tr>
+  </table>
+</div>
 
+The TF-IDF model performs better overall. It has a higher F1 score during training (0.9610 compared to BERT's 0.9311) and performs well on the test data as well (0.9465 compared to BERT's 0.9319). Even though both models have low loss, TF-IDF demonstrates stronger performance, particularly in training.
 
